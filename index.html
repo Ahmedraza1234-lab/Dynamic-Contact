@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact List App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📇 My Contact List</h1>
+
+    <div class="form-container">
+        <input type="text" id="name" placeholder="Name">
+        <input type="tel" id="number" placeholder="Phone Number">
+        <input type="text" id="relation" placeholder="Relation (Father, Brother, etc.)">
+        <div class="buttons">
+            <button class="add" onclick="addContact()">Add</button>
+            <button class="edit" onclick="editContact()">Edit</button>
+            <button class="delete" onclick="deleteContact()">Delete</button>
+            <button class="search" onclick="searchContact()">Search</button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Number</th>
+                    <th>Relation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contacts will appear here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
